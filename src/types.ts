@@ -9,6 +9,10 @@ export interface TomTomSearchResult {
     countryCode: string;
     freeformAddress: string;
   };
+  position: {
+    lat: number;
+    lon: number;
+  };
 }
 
 export interface AddressResult {
@@ -20,6 +24,8 @@ export interface AddressResult {
   country: string;
   countryCode: string;
   freeformAddress: string;
+  latitude: number;
+  longitude: number;
 }
 
 export interface TomTomResponse {

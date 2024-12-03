@@ -28,6 +28,8 @@ function mapToAddressResult(result: TomTomSearchResult): AddressResult {
       state: result.address.countrySubdivision,
       country: result.address.country,
       countryCode: result.address.countryCode,
-      freeformAddress: result.address.freeformAddress
+      freeformAddress: result.address.freeformAddress,
+      latitude: result.position.lat,
+      longitude: result.position.lon
     };
   }
