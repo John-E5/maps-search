@@ -15,7 +15,7 @@ export async function getPlaceAutocomplete(key: string, address: string): Promis
     if (!autocomplete.data.results?.length) {
         return [];
       }
-      console.log(autocomplete.data.results);
+      
     return autocomplete.data.results.map(mapToAddressResult);
 }
 
